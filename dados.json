@@ -1,0 +1,50 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java"
+    },
+    {
+      "id": 2,
+      "titulo": "Dev. Front-End"
+    },
+    {
+      "id": 3,
+      "titulo": "Analista de Dados"
+    },
+    {
+      "id": 4,
+      "titulo": "Professor Excel"
+    },
+    {
+      "id": 5,
+      "titulo": "Dev. Back-End"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Gustavo",
+      "data": "1999-08-21",
+      "telefone": "1122223333",
+      "email": "luciano.almeida.14@hotmail.com",
+      "vaga": "Dev. Front-End",
+      "id": 1
+    },
+    {
+      "nome": "Luciano ",
+      "data": "1999-08-02",
+      "telefone": "1122223333",
+      "email": "luciano.almeida.14@hotmail.com",
+      "vaga": "Professor Excel",
+      "id": 2
+    },
+    {
+      "nome": "Natalha",
+      "data": "1983-12-12",
+      "telefone": "1122223333",
+      "email": "natalha@hotmail.com",
+      "vaga": "Analista de Dados",
+      "id": 3
+    }
+  ]
+}

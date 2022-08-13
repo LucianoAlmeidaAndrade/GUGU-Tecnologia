@@ -1,0 +1,68 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+
+    /* resolvendo o efeito colateral float */
+    overflow: hidden;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+
+    
+}
+
+.menu a:hover, .menu a:focus {
+    background-color: white;
+    color: blue;
+}
+
+/* Deixa os itens da litas "flutando" à esquerda (na pratica fica lado a lado) */
+
+.menu li {float: left;}
+
+
+
+
+.menu li.icone { display: none; }
+
+
+
+@media screen and (max-width:760px) {
+/* escondemos os itens menu */
+        .menu li { display: none; }
+
+/* Exibindo novamente o item/icone do Menu */
+
+        .menu li.icone { 
+            display: block;
+            float: right;
+        }
+
+/* Regra "fechada", muito específica
+    Somente se a lista estiver com as duas classes
+    JUNTAS [menu e aberto, é que as configurações
+    de float e display entrarão */
+        .menu.aberto li{
+            float: none;
+            display: inline;
+        }
+
+        /* Apenas se as duas classes estiverem JUNTAS,
+    posicionamos o icone/menu acima e à direita
+    em relação à lista */
+        menu.aberto li.icone {
+            position: absolute;
+            right: 0; top: 0;      
+        }
+
+        /* Quando o menu estiver aberto, ele
+    passará a ser a referência de posicionamento
+    do ícone/menu */
+    .menu.aberto { position: relative; }
+}

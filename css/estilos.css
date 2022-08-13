@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Reset nos espaçamentos */
+    margin: 0; padding: 0;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-left: 15px;
+}
+
+#imagem-decorativa {
+    background-image: url(../imagens/teclado.jpg);
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Exercícios
+1) Crie uma regra para o grupo de conteúdos 
+da página em que seja aplicada uma margem automática e uma largura de 85vw. */
+main {
+    margin: auto;
+    width: 85vw;
+}
+
+/* 2) Crie uma regra para o rodapé em que sejam aplicadas as seguintes configurações:
+-altura de pelo menos uns 200px
+-plano de fundo (pode ser cor sólida, gradiente, ou alguma imagem)
+-cor de texto que tenha contraste com o fundo
+-alinhamento do texto centralizado
+
+DESAFIO: centralize o conteúdo COMPLETAMENTE, ou seja, centralize na horizontal e na vertical */
+footer {
+    height: 200px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.treinamentos section{
+    background-color: white;
+    width: 32%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.treinamentos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flutuar-imagem{
+    float: left;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .treinamentos { flex-direction: column}
+    .treinamentos section {
+        width: auto;
+        margin-bottom: 20px;
+    }
+};
+    
+
+
+
+
+
